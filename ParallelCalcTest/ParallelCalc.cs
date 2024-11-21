@@ -40,8 +40,6 @@ namespace ParallelCalcTest
                     end = Max;
                 }
 
-                Thread.Sleep(100); // Simulate some work
-
                 threads[i] = new Thread(() => Calc(start, end, index));
             }
 
